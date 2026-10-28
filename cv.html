@@ -1,0 +1,259 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="robots" content="noindex, nofollow, noarchive"><title>Eyas Hamad - CV</title><meta name="author" content="Eyas Hamad"><meta name="description" content="Civil and structural engineer: precast design, BIM, engineering ERP and SAP S/4HANA."><link rel="preload" href="fonts/sans-300.woff2" as="font" type="font/woff2" crossorigin><style>@font-face{font-family:'Site Sans';src:url('fonts/sans-300.woff2') format('woff2');font-weight:300;font-display:swap;}
+@font-face{font-family:'Site Sans';src:url('fonts/sans-400.woff2') format('woff2');font-weight:400;font-display:swap;}
+@font-face{font-family:'Site Sans';src:url('fonts/sans-600.woff2') format('woff2');font-weight:600;font-display:swap;}
+@font-face{font-family:'Site Sans';src:url('fonts/sans-700.woff2') format('woff2');font-weight:700;font-display:swap;}
+
+:root { --ink: #030404; --charcoal: #313131; --signal: #FBCD15; --ground: #F0F0F0; --grey: #706F71;
+        --rule: #D6D6D6; --paper: #FFFFFF; --wrap: 1200px; }
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+body { margin: 0; background: var(--paper); color: var(--ink); font: 300 17px/1.6 'Site Sans', 'Segoe UI', sans-serif; }
+b, strong, th { font-weight: 600; }
+a { color: inherit; text-decoration-color: var(--signal); text-decoration-thickness: 2px; text-underline-offset: 3px; }
+a:focus-visible, button:focus-visible { outline: 3px solid var(--ink); outline-offset: 3px; }
+img { max-width: 100%; height: auto; display: block; }
+h1, h2, h3, h4 { margin: 0; line-height: 1.15; }
+h2 { font-size: clamp(28px, 4vw, 40px); font-weight: 600; letter-spacing: -0.015em; padding-top: 14px;
+     border-top: 5px solid var(--signal); display: inline-block; }
+h3 { font-size: 20px; font-weight: 600; }
+h4 { font-size: 16px; font-weight: 600; margin: 22px 0 8px; }
+.wrap { max-width: var(--wrap); margin: 0 auto; padding: 0 24px; }
+section { padding: 72px 0; }
+.tint { background: var(--ground); }
+.sub { color: var(--charcoal); max-width: 72ch; margin: 12px 0 0; }
+.note { color: var(--charcoal); max-width: 80ch; margin: 28px 0 0; }
+.kicker { margin: 0 0 10px; color: var(--charcoal); font-weight: 400; }
+.lead { font-size: 18px; color: var(--charcoal); max-width: 70ch; margin: 18px 0 0; }
+
+/* header */
+.top { position: sticky; top: 0; z-index: 10; background: rgba(255,255,255,.97); border-bottom: 1px solid var(--rule); }
+.bar { display: flex; align-items: center; justify-content: space-between; gap: 16px; min-height: 62px; }
+.me { font-weight: 700; text-decoration: none; font-size: 18px; white-space: nowrap; }
+.top nav { display: flex; gap: 20px; overflow-x: auto; scrollbar-width: none; }
+.top nav::-webkit-scrollbar { display: none; }
+.top nav a { text-decoration: none; font-weight: 400; color: var(--charcoal); white-space: nowrap; padding: 4px 0; font-size: 15px; }
+.top nav a:hover, .top nav a[aria-current] { color: var(--ink); box-shadow: inset 0 -3px 0 var(--signal); }
+
+/* hero */
+.hero { padding: 80px 0 64px; }
+.hero-grid { display: grid; grid-template-columns: minmax(0, 6fr) minmax(0, 5fr); gap: 48px; align-items: center; }
+.hero h1, .cv-head h1 { font-size: clamp(52px, 9vw, 108px); font-weight: 700; letter-spacing: -0.035em; line-height: .95; }
+.statement { font-size: clamp(21px, 2.5vw, 29px); font-weight: 400; line-height: 1.3; max-width: 30ch; margin: 22px 0 0; }
+.hero-visual figcaption { font-size: 13px; }
+.actions { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 30px; }
+.btn { display: inline-block; padding: 12px 20px; border: 1.5px solid var(--ink); text-decoration: none; font-weight: 400;
+       background: var(--paper); }
+.btn:hover { background: var(--ground); }
+.btn.primary { background: var(--signal); }
+.btn.primary:hover { background: #F3C200; }
+
+/* section pages */
+.page-head { padding: 64px 0 40px; border-bottom: 1px solid var(--rule); }
+.page-title { font-size: clamp(36px, 6vw, 64px); font-weight: 700; letter-spacing: -0.03em; max-width: 22ch; }
+.toc { display: flex; flex-wrap: wrap; gap: 8px 10px; margin: 28px 0 0; }
+.toc a { padding: 6px 12px; border: 1px solid var(--rule); text-decoration: none; font-size: 15px; background: var(--paper); }
+.toc a:hover { border-color: var(--ink); }
+.cases { padding-top: 16px; }
+
+/* production line: the one bold element */
+.line { background: var(--ground); padding: 56px 0 64px; }
+.line h2 { border: 0; padding: 0; font-size: clamp(24px, 3vw, 32px); }
+.line .intro { color: var(--charcoal); max-width: 72ch; margin: 10px 0 36px; }
+.stations { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(6, 1fr); position: relative; }
+.stations::before { content: ""; position: absolute; top: 12px; left: 8.33%; right: 8.33%; height: 10px; background: var(--signal); }
+.stations li { position: relative; text-align: center; padding: 0 8px; }
+.stations .pt { display: block; width: 34px; height: 34px; margin: 0 auto 14px; border-radius: 50%; background: var(--paper);
+                border: 3px solid var(--ink); position: relative; }
+.stations .pt::after { content: ""; position: absolute; inset: 8px; border-radius: 50%; background: var(--ink); }
+.stations .st { display: block; font-weight: 400; color: var(--charcoal); }
+.stations .fig { display: block; font-size: clamp(24px, 2.6vw, 34px); font-weight: 700; letter-spacing: -0.02em; line-height: 1.2; }
+.stations .what { display: block; font-size: 14px; color: var(--grey); line-height: 1.35; }
+
+/* figures */
+.band { padding: 48px 0; }
+.figs { display: grid; grid-template-columns: repeat(5, 1fr); gap: 20px; border-top: 5px solid var(--signal); padding-top: 18px; }
+.figs b { display: block; font-size: clamp(26px, 3vw, 38px); font-weight: 700; letter-spacing: -0.02em; line-height: 1.1; }
+.figs span { color: var(--charcoal); font-size: 15px; }
+
+/* offers, features, plan, families, software */
+.offers { display: grid; grid-template-columns: repeat(3, 1fr); gap: 36px 40px; margin-top: 40px; }
+.offer h3 { padding-top: 10px; border-top: 1.5px solid var(--ink); margin-bottom: 8px; }
+.offer p { margin: 0; color: var(--charcoal); }
+.features { display: grid; grid-template-columns: repeat(3, 1fr); gap: 28px; margin-top: 36px; }
+.feature { display: block; text-decoration: none; background: var(--paper); border: 1px solid var(--rule); padding: 0 0 18px; }
+.feature:hover { border-color: var(--ink); }
+.feature img { aspect-ratio: 16 / 10; object-fit: contain; width: 100%; background: var(--paper); border-bottom: 1px solid var(--rule); }
+.feature h3 { margin: 16px 18px 6px; }
+.feature p { margin: 0 18px; color: var(--charcoal); font-size: 15px; }
+.feature .more { display: inline-block; margin: 12px 18px 0; font-weight: 400; box-shadow: inset 0 -3px 0 var(--signal); }
+.plan { list-style: none; counter-reset: step; margin: 40px 0 0; padding: 0; display: grid; grid-template-columns: repeat(5, 1fr); gap: 24px; }
+.plan li { counter-increment: step; border-top: 5px solid var(--signal); padding-top: 14px; }
+.plan li::before { content: counter(step); display: block; font-size: 40px; font-weight: 700; line-height: 1; margin-bottom: 10px; }
+.plan h3 { font-size: 18px; margin-bottom: 6px; }
+.plan p { margin: 0; color: var(--charcoal); font-size: 15px; }
+.families { display: grid; grid-template-columns: repeat(5, 1fr); gap: 20px; margin-top: 36px; }
+.fam svg { width: 100%; height: auto; background: var(--paper); border: 1px solid var(--rule); display: block; }
+.fam h3 { margin: 12px 0 4px; font-size: 18px; }
+.fam p { margin: 0; font-size: 15px; color: var(--charcoal); }
+svg .c { fill: none; stroke: var(--ink); stroke-width: 1.6; }
+svg .t { fill: none; stroke: var(--ink); stroke-width: .8; }
+svg .s { fill: none; stroke: #C9A206; stroke-width: 1.6; }
+svg .sf { fill: var(--ink); }
+svg .sf2 { fill: var(--signal); stroke: var(--ink); stroke-width: .8; }
+svg .dash { stroke-dasharray: 3 2; }
+.software { display: grid; grid-template-columns: repeat(2, 1fr); gap: 26px 48px; margin-top: 36px; }
+.software h3 { font-size: 18px; margin-bottom: 4px; }
+.software p { margin: 0; color: var(--charcoal); }
+
+/* case studies */
+.case { padding: 64px 0 16px; border-bottom: 1px solid var(--rule); scroll-margin-top: 70px; }
+.case:last-child { border-bottom: 0; }
+.case-head { display: grid; grid-template-columns: minmax(0, 5fr) minmax(0, 6fr); gap: 44px; align-items: start; }
+.case-title { font-size: clamp(26px, 3vw, 36px); }
+.case .sub { margin-top: 10px; }
+.problem { color: var(--charcoal); margin: 16px 0 0; }
+.how { background: var(--ground); padding: 4px 18px 14px; margin-top: 18px; border-left: 5px solid var(--signal); }
+.how h4 { margin-top: 12px; }
+.how p { margin: 0; }
+.ticks { margin: 0; padding: 0; list-style: none; }
+.ticks li { position: relative; padding-left: 22px; margin-bottom: 8px; }
+.ticks li::before { content: ""; position: absolute; left: 2px; top: .62em; width: 9px; height: 9px; background: var(--signal);
+                    outline: 1px solid var(--ink); }
+.results { display: grid; grid-template-columns: repeat(2, 1fr); gap: 14px 24px; margin-top: 22px; }
+.results b { display: block; font-size: 26px; font-weight: 700; letter-spacing: -0.02em; line-height: 1.1; }
+.results span { font-size: 15px; color: var(--charcoal); }
+.stack { color: var(--grey); font-size: 15px; margin: 18px 0 0; }
+.case-visual { position: sticky; top: 84px; }
+.case-visual img { border: 1px solid var(--rule); background: var(--paper); }
+.gal-title { margin-top: 44px; }
+figure { margin: 0; }
+figcaption { font-size: 14px; color: var(--charcoal); margin-top: 8px; line-height: 1.45; }
+.gallery { display: grid; grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); gap: 28px; margin: 14px 0 44px; }
+.gallery img { border: 1px solid var(--rule); background: var(--paper); aspect-ratio: 4 / 3; object-fit: contain; width: 100%; }
+a.zoom { display: block; cursor: zoom-in; }
+
+/* diagrams from the portfolio */
+.panel { background: var(--ground); padding: 22px 24px; }
+.panel > b { display: block; margin-bottom: 6px; }
+.panel .note { margin: 10px 0 0; font-size: 14px; color: var(--grey); }
+.flow { display: flex; flex-wrap: wrap; align-items: stretch; gap: 8px; margin: 10px 0 14px; }
+.flow .node { flex: 1 1 120px; border: 1.5px solid var(--ink); padding: 10px 12px; background: var(--paper); font-size: 14px; line-height: 1.35; }
+.flow .node b { display: block; font-size: 15px; }
+.flow .node.hot { background: var(--signal); }
+.flow .arrow { display: none; }
+.bars .row { display: grid; grid-template-columns: 64px 1fr 70px; align-items: center; gap: 10px; margin: 5px 0; font-size: 14px; }
+.bars .bar { height: 12px; background: var(--signal); outline: 1px solid var(--ink); }
+.panel table.matrix td:first-child { width: 110px; }
+
+/* capability matrix */
+.table-wrap { margin-top: 32px; }
+table.matrix { width: 100%; border-collapse: collapse; font-size: 15px; background: var(--paper); }
+table.matrix th { text-align: left; padding: 12px 14px; border-bottom: 2px solid var(--ink); background: var(--signal); }
+table.matrix td { vertical-align: top; padding: 14px; border-bottom: 1px solid var(--rule); }
+table.matrix td:first-child { font-weight: 600; width: 140px; }
+
+/* career, contact */
+.timeline { list-style: none; margin: 32px 0 0; padding: 0; display: grid; gap: 22px; }
+.timeline li { display: grid; grid-template-columns: 200px 1fr; column-gap: 24px; }
+.timeline .when { color: var(--grey); grid-row: span 2; }
+.timeline b { font-size: 18px; }
+.timeline li > span:last-child { color: var(--charcoal); }
+.cta { background: var(--ink); color: var(--paper); }
+.cta h2 { border-top-color: var(--signal); }
+.cta .sub { color: #D9D9D9; }
+.cta a { color: var(--paper); }
+.cta .btn { color: var(--ink); }
+.contact { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 40px; align-items: start; }
+.contact-list { display: grid; gap: 10px; font-size: 19px; padding-top: 22px; }
+.contact-list .actions { margin-top: 14px; }
+
+/* footer: a drawing title block */
+.foot { padding: 28px 0 36px; }
+.tb { display: flex; flex-wrap: wrap; border: 1.5px solid var(--ink); max-width: fit-content; font-size: 14px; }
+.tb > div { padding: 8px 14px; border-left: 1.5px solid var(--ink); }
+.tb > .sig { width: 18px; padding: 0; background: var(--signal); border-left: 0; }
+.tb .who { font-weight: 600; }
+
+/* lightbox */
+dialog#lb { border: 0; padding: 16px; max-width: min(96vw, 1500px); max-height: 94vh; background: var(--paper); }
+dialog#lb::backdrop { background: rgba(3,4,4,.82); }
+dialog#lb img { max-height: calc(94vh - 110px); width: auto; margin: 0 auto; }
+dialog#lb p { margin: 10px 0 0; font-size: 15px; color: var(--charcoal); max-width: 90ch; }
+dialog#lb .close { float: right; margin: 0 0 8px 12px; border: 1.5px solid var(--ink); background: var(--signal);
+                   font: 400 15px 'Site Sans', sans-serif; padding: 6px 14px; cursor: pointer; }
+
+/* CV page */
+.cv section { padding: 40px 0 0; }
+.cv .cv-head { padding-top: 64px; }
+.cv .meta { display: flex; flex-wrap: wrap; gap: 6px 22px; color: var(--grey); margin: 16px 0 0; }
+.cv h2 { font-size: clamp(22px, 2.6vw, 28px); margin-bottom: 18px; }
+.cv { padding-bottom: 64px; }
+.competencies { display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px 40px; }
+.competencies h3 { font-size: 17px; margin-bottom: 4px; }
+.competencies p { margin: 0; color: var(--charcoal); font-size: 15px; }
+.job { margin-bottom: 26px; }
+.job-line { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 4px 16px; font-size: 19px; }
+.job-line span { color: var(--charcoal); font-size: 16px; }
+.org { margin: 2px 0 10px; color: var(--charcoal); font-weight: 400; }
+.scope { color: var(--grey); max-width: 90ch; }
+.grp h4 { padding-top: 8px; border-top: 1px solid var(--rule); }
+.fam-row { display: grid; grid-template-columns: 160px 1fr; column-gap: 24px; padding: 14px 0; border-top: 1px solid var(--rule); }
+.fam-row h4 { margin: 0; grid-row: span 4; }
+.fam-row p { margin: 0 0 6px; grid-column: 2; font-size: 15px; }
+.two { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; }
+
+/* tablets */
+@media (max-width: 1080px) {
+  .hero-grid, .case-head, .contact, .two { grid-template-columns: 1fr; gap: 28px; }
+  .case-visual { position: static; }
+  .offers, .features { grid-template-columns: repeat(2, 1fr); }
+  .plan { grid-template-columns: repeat(2, 1fr); }
+  .families { grid-template-columns: repeat(3, 1fr); }
+  .figs { grid-template-columns: repeat(3, 1fr); }
+}
+/* phones */
+@media (max-width: 680px) {
+  body { font-size: 16px; }
+  .wrap { padding: 0 16px; }
+  section { padding: 52px 0; }
+  .hero { padding: 40px 0 44px; }
+  .bar { flex-direction: column; align-items: flex-start; gap: 2px; padding: 10px 0 6px; }
+  .top nav { gap: 16px; width: 100%; }
+  .offers, .features, .plan, .software, .competencies, .results { grid-template-columns: 1fr; }
+  .families { grid-template-columns: repeat(2, 1fr); }
+  .figs { grid-template-columns: repeat(2, 1fr); }
+  .stations { grid-template-columns: 1fr; gap: 18px; }
+  .stations::before { left: 15px; right: auto; top: 10px; bottom: 10px; width: 8px; height: auto; }
+  .stations li { display: grid; grid-template-columns: 34px 1fr; column-gap: 16px; text-align: left; padding: 0; }
+  .stations .pt { margin: 0; grid-row: span 3; }
+  .timeline li, .fam-row { grid-template-columns: 1fr; }
+  .fam-row p { grid-column: 1; }
+  .gallery { grid-template-columns: 1fr; }
+  table.matrix thead { display: none; }
+  table.matrix, table.matrix tbody, table.matrix tr, table.matrix td { display: block; width: 100%; }
+  table.matrix tr { border-top: 3px solid var(--signal); padding: 6px 0 10px; }
+  table.matrix td { border: 0; padding: 4px 0; }
+  table.matrix td::before { content: attr(data-label) ": "; font-weight: 600; }
+  table.matrix td:first-child { font-size: 18px; }
+  table.matrix td:first-child::before { content: none; }
+  .btn { flex: 1 1 auto; text-align: center; }
+}
+</style></head><body><header class="top"><div class="wrap bar"><a class="me" href="index.html">Eyas Hamad</a><nav aria-label="Main"><a href="index.html">Overview</a><a href="structural.html">Structural design</a><a href="bim.html">BIM and drawings</a><a href="systems.html">ERP, SAP and data</a><a href="documents.html">Documents and tenders</a><a href="cv.html" aria-current="page">CV</a><a href="#contact">Contact</a></nav></div></header><main><div class="cv"><div class="wrap"><section class="cv-head"><h1>Eyas Hamad</h1><p class="statement">Civil &amp; Structural Engineer. Precast Engineering Lead, Digital Transformation, SAP S/4HANA, BIM, Engineering Systems</p><p class="meta"><span>Riyadh, Saudi Arabia</span> <span>+966 53 726 5921</span> <span>eyashamadd@gmail.com</span> <span>Jordanian national</span></p><div class="actions"><a class="btn primary" href="files/Eyas_Hamad_CV.pdf">Designed CV (PDF)</a><a class="btn" href="files/Eyas_Hamad_CV_ATS.pdf">ATS CV (PDF)</a><a class="btn" href="files/Eyas_Hamad_CV_ATS.docx">ATS CV (Word)</a><a class="btn" href="files/Eyas_Hamad_Portfolio.pdf">Portfolio (PDF)</a></div></section><section><h2>Profile</h2><p class="lead">Civil and structural engineer with technical ownership of precast design, tendering, submittals and drawings at a Saudi precast concrete manufacturer. Led its SAP S/4HANA Cloud master data and cross-department integration through Go-Live on 30 Dec 2025, connecting engineering with costing, procurement, production and planning, and led the BIM transformation of its design office; trained the technical office and users across departments. Designs RC pipes, jacking pipes, circular and rectangular manholes and box culverts to AASHTO LRFD, ASTM, BS EN 1916, DWA-A 161, ACI and MOMRA with SAP2000 finite-element models, and has programmed those codes into design engines that check every configuration before release. Priced ~4,000 quotations since 2023 across Saudi giga- and mega-projects. Architected the Precast Engineering ERP and builds these engineering systems by directing AI coding agents under automated test gates.</p></section><section><h2>Key achievements</h2><ul class="ticks"><li><b>Structural design:</b> RC pipes, jacking pipes, circular and rectangular manholes and box culverts designed with product-specific codes (AASHTO LRFD, ASTM, BS EN 1916, DWA-A 161, ACI, MOMRA), SAP2000 finite-element models and full calculation memos; steel moulds designed for the jacking-pipe range.</li><li><b>Commercial engineering:</b> priced ~4,000 quotations since 2023 across Saudi giga- and mega-projects, from NEOM and Qiddiya to EXPO 2030 and King Salman Park.</li><li><b>SAP digital transformation:</b> led master data and integration of SAP S/4HANA Cloud to Go-Live (30 Dec 2025): ~40,000 materials, 34,000+ BOMs, ~11,000 routings, 88 work centers.</li><li><b>Cross-functional integration:</b> engineering connected to costing, procurement, production and planning through one SAP product model.</li><li><b>BIM digital transformation:</b> Revit 2027 product system v1.0 that generated 6,394 standard drawing sheets for 1,345 manhole products from one master data set.</li><li><b>Precast Engineering ERP:</b> architected and built an inquiry-centred platform; version 1 has run inquiry-to-quotation work daily since Go-Live (1,290+ inquiries), and version 2 creates cages, routings and production versions directly in SAP.</li><li><b>Error-proof engineering:</b> governing codes and every precast configuration of the factory's range programmed into tested engines, so designs are checked against code before release.</li><li><b>Technical documents:</b> calculation memos, catalogues, drawing sets and test plans, backed by the factory's prequalification and material-submittal system and its 452-page master package.</li></ul></section><section><h2>Core competencies</h2><div class="competencies"><div><h3>Structural Design of Precast Infrastructure</h3><p>AASHTO LRFD, ASTM C76M / C478M / C1433M, BS EN 1916, DWA-A 161, ACI 318M and 350, MOMRA, SAP2000 shell, frame and solid models, Eriksson Pipe and Eriksson Culvert</p></div><div><h3>Technical Leadership</h3><p>Technical owner of design, tendering, submittals and drawings, product standards, training the technical office and other departments, cross-department change</p></div><div><h3>Technical Office</h3><p>Tender BOQ analysis and take-off, design calculations, shop drawings and BBS, PQD and material submittals, ITPs</p></div><div><h3>Manufacturing &amp; Operations Integration</h3><p>BOMs, routings and work centers driving costing, procurement, production and planning, production versions, steel mould design</p></div><div><h3>Engineering ERP &amp; Product Digitalisation</h3><p>Inquiry-centred workflow from BOQ to SAP product, engineering rules as code, knowledge retention, production-resource modelling</p></div><div><h3>SAP S/4HANA Cloud Public Edition: Manufacturing Master Data</h3><p>Materials Management (MM) and Production Planning (PP) master data, material master, bills of materials (BOMs), routings, work centers, production versions, classification and Advanced Variant Configuration (AVC), Migration Cockpit, OData integration</p></div><div><h3>BIM &amp; Drawing Automation</h3><p>Revit 2027 add-ins (C#), native rebar modelling, parametric families, Dynamo, automated sheets, PDF/DWG/IFC, BBS and BOM</p></div><div><h3>Costing &amp; Pricing</h3><p>TABS activity-based costing, MAS, pricing engine with floor / target / max logic per product family</p></div><div><h3>Digital Engineering</h3><p>SAP2000 API design automation, Python, Excel/VBA, analytics dashboards, AI-agent orchestration with verification gates</p></div></div></section><section><h2>Experience</h2><div class="job"><div class="job-line"><b>Senior Technical Engineer &amp; SAP Master Data Coordinator</b><span>Aug 2023 – Present</span></div><p class="org">Al Jazirah Development Factory for Concrete Products (JDCO), Riyadh, Saudi Arabia</p><p class="scope">Precast concrete manufacturer of pipes, manholes and box culverts for infrastructure. Technical owner of precast design, tendering, submittals and drawings. As the company's digital transformation lead, led the SAP S/4HANA Cloud master data and cross-department integration through Go-Live and the BIM transformation of the design office; connected engineering with costing, procurement, production and planning, and trained the technical office and users across departments.</p><div class="grp"><h4>Structural Design &amp; Precast Standards</h4><ul class="ticks"><li>Designed out human error: encoded the governing codes (ASTM, AASHTO, ACI) and programmed every configuration of the factory's precast range, so each design, drawing and bill of materials is checked against code before release.</li><li>Standardised the RCP range: 78 products (26 moulds × Classes III/IV/V) to ASTM C76 and AASHTO direct design, with calculation memos, 67 standard drawing sets from a Revit pipeline, bar bending schedules and an inspection and test plan; the design engine's cross-check against Eriksson Pipe agreed within 0.04%.</li><li>Delivered a SAP2000-driven design engine for circular and rectangular manholes that produces 44–54-page calculation memos; all 4 release cases passed with zero failed checks, and the rectangular analysis cycle fell from 28+ minutes to about 6.</li><li>Took the box-culvert design program (single and twin cell, SAP2000 API) to v2.0, generating calculation memos, BBS and shop drawings under a 7,000+ test release gate.</li><li>Built the jacking-pipe standard for microtunnelling: a 21-mould range with two cages, 50 and 100-year design lives, lined and unlined, designed to BS EN 1916 and DWA-A 161 and verified in SAP2000 (ring frame, 3D solid end zone, intermediate jacking station), with calculation memos, a catalogue and Revit drawing sets per size.</li><li>Designed the steel moulds for the 21-size jacking-pipe range, with a full Revit drawing set per size: pallet, jacket, collapsible core, header and intermediate jacking station units, checked for fresh-concrete pressure under vibration and for lifting to EN 1993-1-8, with tolerances from BS EN 1916 and welding to BS EN ISO 3834-3.</li><li>Structured a revision-controlled registry of Saudi authority standards and standard drawings for precast products, feeding the company's product-standards matrix.</li></ul></div><div class="grp"><h4>Technical Office: Tendering, Submittals &amp; Approvals</h4><ul class="ticks"><li>Technical owner of quotation engineering: priced ~4,000 quotations since 2023 across Saudi giga- and mega-projects, including NEOM, Qiddiya, Diriyah, King Salman Park, EXPO 2030, King Salman International Airport, KAFD, Salwa and Royal Commission work: BOQ and item analysis, product design where needed, quantity take-off, costing, drawings and, since Go-Live, SAP material creation.</li><li>Built a gated BOQ take-off pipeline for tender packages that generates SAP material codes directly from BOQ attributes and turns every error found into a reusable check.</li><li>Produced the engineering documents for technical review and submittals: calculation memos from the design engines (156 for the RC pipe range alone), an 86-page engineering catalogue and a 35-page bilingual public catalogue, standard Revit drawing sets with BBS, and an inspection and test plan specifying three-edge-bearing proof testing to ASTM C497.</li><li>Prepared prequalification and material-submittal packages for contractor and consultant review on projects including Qiddiya, EXPO 2030, King Salman Park, Diriyah and KAFD, logging review outcomes to fix their root causes.</li><li>Built the prequalification and material-submittal system: an 18-category reference library, a certificate-expiry register and compliance sheets per product; rebuilt the 452-page master prequalification package (156 bookmarks) in the company identity.</li></ul></div><div class="grp"><h4>Manufacturing, Costing &amp; Cross-Department Integration</h4><ul class="ticks"><li>Connected engineering to costing, procurement, production and planning through SAP product structures (BOMs, routings, work centers linked to cost centers) that drive material requirements, purchasing, production orders and TABS costing.</li><li>Modelled the factory's production resources in SAP: 88 work centers with 337 cost-center links, 10,931 production versions and routings with 41,000+ operations, so capacity, costing and planning run on the same engineering data.</li><li>Developed the TABS activity-based costing model (direct material; production overhead, labour and machine; transport) and a pricing engine with floor/target/max logic per product family, used alongside MAS for quotation pricing.</li></ul></div><div class="grp"><h4>SAP S/4HANA Cloud Digital Transformation</h4><ul class="ticks"><li>Led master data and cross-department integration for JDCO's SAP S/4HANA Cloud (Public Edition) implementation through Go-Live on 30 Dec 2025, connecting engineering, production, planning, sales and finance on one product model.</li><li>Built the manufacturing master data: ~40,000 materials across 11 material types, 34,000+ BOMs (~1.2M items), ~11,000 routings (41,000+ operations), 88 work centers linked to cost centers, and classification/AVC (16 classes, 92 characteristics) for configurable box culverts.</li><li>Trained the technical office and users across departments on master data and engineering-to-SAP workflows, and remain their first-line support after Go-Live.</li><li>Set the material coding standard and built Excel/VBA and Python generators that produce FG, BOM, routing and quality-inspection data from reference products, loaded in bulk through Migration Cockpit and record by record through OData.</li><li>Delivered 29 automated management reports from S/4HANA OData (sales, production, dispatch, data integrity, QC certificates) as scheduled HTML and Excel dashboards.</li><li>Built a 35-entity OData extraction and local data mirror (~9M rows) that feeds the pricing, engineering and reporting tools without manual exports.</li></ul></div><div class="grp"><h4>Precast Engineering ERP</h4><ul class="ticks"><li>Architect and builder of the Precast Engineering ERP, an inquiry-centred platform for the technical office that runs each order on one inquiry record: BOQ import and item analysis, cost take-off from live SAP BOMs, quotation create and revise, and new FG/BOM/routing/QM creation in SAP, with the design, drawing and submittal engines linked into the same record. Version 1 has run the inquiry-to-quotation workflow daily since Go-Live (1,290+ inquiries).</li><li>Re-engineered it as a tested platform: a Python core with JSON job contracts, an Excel ribbon add-in, a preview-apply-verify-log cycle for every SAP write, and 4,252 automated tests; it already creates cages, routings and production versions directly in SAP.</li><li>Automated design, drawings and BIM for five precast product families (RC pipes, jacking pipes, circular manholes, rectangular manholes and box culverts): design engines that write calculation memos, drawing and BBS generators, and Revit models from the same product data.</li><li>Encoded the company's engineering and product knowledge in software: design rules to ASTM, AASHTO and ACI, SAP-valid product configuration rules and a knowledge base covering 29+ products, so expertise stays with the company rather than with individuals.</li></ul></div><div class="grp"><h4>BIM Digital Transformation</h4><ul class="ticks"><li>Led the BIM transformation of manhole design and drafting: a Revit 2027 product system (C# rule engine and add-in) that turns a design order into native-rebar models, sheets, PDF/DWG/IFC, BBS, BOM and take-off; released v1.0 in Oct 2026 with 1,000+ automated .NET tests.</li><li>Generated a standard drawing library of 6,394 sheets for 1,345 manhole products (3,059 types) from one master data set, each sheet passing an automated drafting-standard check.</li><li>Extended the Revit pipeline to the RC pipe range (67 standard drawing sets), the jacking-pipe range and its steel moulds, every set with 3D views, BBS and automated sheet checks.</li><li>Built parametric Revit families and Dynamo (Python) scripts for precast elements, linking model quantities to Excel and SAP so drawings, BBS and BOMs come from one source.</li><li>Designed the architecture of a multi-tenant precast configurator prototype (Python parametric DXF engine with a Next.js web app; 1,179 tests) that seeded the production manhole tools.</li></ul></div><div class="grp"><h4>Engineering Systems &amp; AI</h4><ul class="ticks"><li>Architect of a multi-agent AI engineering workflow (Claude Code and OpenAI Codex) with model routing, independent cross-model review and safety guards; used to build and maintain the design engines, BIM system, SAP tools and analytics under 17,000+ automated tests across release gates.</li></ul></div></div></section><section><h2>Structural design capability</h2><p class="sub">Each product family has its own design engine with these codes programmed in, so every configuration is checked before a memo, drawing or bill of materials is released.</p><div class="fam-row"><h4>RC pipes</h4><p><b>Codes:</b> ASTM C76M, C497; AASHTO LRFD 2024 §12.10; ACPA; MOMRA.</p><p><b>Loads:</b> Earth (vertical arching), fluid, HL-93 and MOMRA vehicles, dry and submerged.</p><p><b>Analysis:</b> Indirect design (installation Types 1-4); direct Heger design on a closed ring; Eriksson Pipe and SAP2000 cross-checks.</p><p><b>Checks:</b> Flexure, crack control, diagonal tension, radial tension, steel limits, stirrups, flotation.</p></div><div class="fam-row"><h4>Jacking pipes</h4><p><b>Codes:</b> BS EN 1916, BS 5911-1, DWA-A 161, ATV-DVWK-A 127, EN 1992-1-1.</p><p><b>Loads:</b> Earth by soil group, groundwater, traffic, jacking force with joint deflection.</p><p><b>Analysis:</b> DWA-A 161 ring; packer stiffness; SAP2000 ring frame and 3D solid end-zone model.</p><p><b>Checks:</b> Ring flexure and crack width, fatigue, end-zone splitting and padding ties, collar and packer.</p></div><div class="fam-row"><h4>Manholes</h4><p><b>Codes:</b> AASHTO LRFD 10th, ASTM C478M, ACI 318M-25, ACI 350, MOMRA live load.</p><p><b>Loads:</b> Earth (ACPA arching), at-rest pressure, HL-93 with surcharge, groundwater and buoyancy, handling.</p><p><b>Analysis:</b> SAP2000 shell model per piece on compression-only joints and springs; Wood-Armer slab design.</p><p><b>Checks:</b> Biaxial flexure, hoop forces, shear, strut-and-tie and punching at openings, cracking, flotation, bearing.</p></div><div class="fam-row"><h4>Box culverts</h4><p><b>Codes:</b> AASHTO LRFD 10th or MOMRA, ASTM C1433M / C1577, ACI 318M-25.</p><p><b>Loads:</b> Earth (Marston and trench factors), lateral earth, surcharge, water, HL-93, HS20, MOMRA vehicles.</p><p><b>Analysis:</b> SAP2000 frame on compression-only Winkler springs; every vehicle placement evaluated.</p><p><b>Checks:</b> Flexure with thrust, shear, crack control, minimum steel, wall stability, bearing, flotation, lifting.</p></div><div class="fam-row"><h4>Steel moulds</h4><p><b>Codes:</b> BS EN 10025 (S275JR), EN 1993-1-8, BS EN ISO 3834-3, ISO 5817, BS EN 1916 tolerances.</p><p><b>Loads:</b> Fresh-concrete pressure as a full liquid head with a factor of 1.5 for vibration; lifting.</p><p><b>Analysis:</b> Part-by-part checks inside generated Revit mould sets.</p><p><b>Checks:</b> Lifting lugs, governing ratio per part, product and mould tolerances, shop checks before the first cast.</p></div></section><section><h2>Earlier experience</h2><div class="job"><div class="job-line"><b>Structural Engineer</b><span>Mar 2023 – Jul 2023</span></div><p class="org">United for Telecom Networks Services Company (UTC), Amman, Jordan</p><p>Design of U-Boot voided slab systems; BOQs and quantity estimates.</p></div><div class="job"><div class="job-line"><b>Structural Engineer</b><span>Sep 2022 – Feb 2023</span></div><p class="org">Al-Dusuqi Engineering Office, Amman, Jordan</p><p>Analysis and design of RC buildings in ETABS, SAFE and PROKON, verified by hand to ACI; shop drawings and reinforcement detailing.</p></div><div class="job"><div class="job-line"><b>Structural &amp; Resident Engineer</b><span>Jan 2022 – Aug 2022</span></div><p class="org">Al-Majal Engineering Office, Zarqa, Jordan</p><p>Structural design of building systems, reinforcement schedules and site coordination.</p></div></section><section class="two"><div><h2>Education</h2><p><b>B.Sc. Civil Engineering, The Hashemite University, Jordan</b>, 2022</p><p>ABET-accredited programme, GPA 3.20 / 4.00</p></div><div><h2>Certifications and training</h2><ul class="ticks"><li><b>Project Management Professional (PMP):</b> in preparation</li><li><b>Advanced Structural Design Program:</b> reinforced concrete, advanced RC, post-tensioned design, seismic analysis</li><li><b>BIM Technical Office Engineer Program:</b> parametric modelling, reinforcement detailing, quantity surveying</li><li><a href="https://drive.google.com/drive/folders/15RUy4PS8un-MJSj1JjvW0Sm1zY5Z80Kn">Certificates</a></li><li><a href="https://drive.google.com/file/d/1cu3nhXGPG4ljRMZLtGGVj_5IC9uTUuJH/view">Portfolio</a></li></ul></div></section><section><h2>Technical skills and languages</h2><p><b>SAP:</b> S/4HANA Cloud Public Edition (MM/PP), Fiori, Migration Cockpit, Mass Maintenance, OData APIs, classification and AVC</p><p><b>Structural analysis:</b> SAP2000 including API automation, Eriksson Culvert, Eriksson Pipe, ETABS, SAFE, PROKON</p><p><b>BIM / CAD:</b> Revit 2027 (families, native rebar, C# API add-ins), Dynamo, AutoCAD, IFC / DWG export</p><p><b>Data &amp; automation:</b> Python, Excel (LET, LAMBDA, XLOOKUP), VBA, SQL/SQLite, Power BI, HTML reporting</p><p><b>AI engineering:</b> Claude Code, OpenAI Codex, multi-agent orchestration, automated verification gates</p><p><b>Standards:</b> ASTM C76, C478, C497, C1433, AASHTO LRFD, ACI 318, MOMRA, BS 5911</p><p><b>Languages:</b> Arabic (native), English (professional working proficiency)</p></section></div></div></main><section id="contact" class="cta"><div class="wrap contact"><div><h2>Want this in your company?</h2><p class="sub">Open to leadership roles in precast and construction engineering, digital transformation, BIM and SAP S/4HANA manufacturing, in Riyadh, the GCC or remote.</p></div><div class="contact-list"><a href="mailto:eyashamadd@gmail.com">eyashamadd@gmail.com</a><a href="tel:+966537265921">+966 53 726 5921</a><span>Riyadh, Saudi Arabia</span><div class="actions"><a class="btn primary" href="files/Eyas_Hamad_CV.pdf">Download CV (PDF)</a><a class="btn" href="files/Eyas_Hamad_Portfolio.pdf">Portfolio (PDF)</a><a class="btn" href="cv.html">Read the CV online</a></div></div></div></section><footer class="foot"><div class="wrap"><div class="tb"><div class="sig"></div><div class="who">Eyas Hamad</div><div>Riyadh, Saudi Arabia</div><div>+966 53 726 5921</div><div>eyashamadd@gmail.com</div><div>Riyadh, Oct 2026</div></div></div></footer><dialog id="lb" aria-label="Enlarged image"><button class="close" type="button">Close</button>
+<img alt=""><p></p></dialog>
+<script>
+(() => {
+  const lb = document.getElementById('lb');
+  if (!lb || !lb.showModal) return;
+  const img = lb.querySelector('img'), cap = lb.querySelector('p');
+  document.addEventListener('click', e => {
+    const a = e.target.closest('a.zoom');
+    if (!a) return;
+    e.preventDefault();
+    img.src = a.getAttribute('href');
+    img.alt = cap.textContent = a.dataset.caption || '';
+    lb.showModal();
+  });
+  lb.addEventListener('click', e => { if (e.target === lb || e.target.classList.contains('close')) lb.close(); });
+})();
+</script></body></html>
